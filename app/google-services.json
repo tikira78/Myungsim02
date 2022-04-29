@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544385895311",
+    "project_id": "myungsim02",
+    "storage_bucket": "myungsim02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544385895311:android:1b6f4ccb2c8744999f59fa",
+        "android_client_info": {
+          "package_name": "com.msba.myungsim02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544385895311-hr61l8nrk966jnd7pdk055fhejnstprm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQTNX12dIeXQIgK1TB6WnZ-XmKjBn2NTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544385895311-hr61l8nrk966jnd7pdk055fhejnstprm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
