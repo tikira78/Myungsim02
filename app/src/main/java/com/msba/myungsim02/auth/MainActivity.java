@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
                                     finish();
 
                                 } else {
+
                                     Toast.makeText(MainActivity.this, "로그인 실패하였습니다.", Toast.LENGTH_SHORT).show();
                                     getConnectivityStatus(getApplicationContext());
                                 }

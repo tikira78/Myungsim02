@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="심장재활"
+        />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/ic_baseline_directions_run_24"
+        android:title="재활운동"
+        />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/ic_baseline_volunteer_activism_24"
+        android:title="위험인자관리" />
+
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/ic_baseline_dangerous_24"
+        android:title="주의사항" />
+
+
+</menu>

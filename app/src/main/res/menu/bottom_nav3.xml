@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/ic_baseline_run_circle_24"
+        android:title="운동부하검사"
+        />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/ic_baseline_save_as_24"
+        android:title="검사 저장" />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="이전 결과 확인" />
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="운동처방전" />
+
+    <item
+        android:id="@+id/navigation_5"
+        android:icon="@drawable/ic_baseline_view_timeline_24"
+        android:title="운동/활동강도" />
+</menu>

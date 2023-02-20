@@ -1,9 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exercise"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FF9800"
     tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+              <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                  <androidx.appcompat.widget.LinearLayoutCompat
+                      android:id="@+id/setting"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginEnd="20dp"
+                      android:orientation="horizontal">
+
+                      <com.airbnb.lottie.LottieAnimationView
+                          android:id="@+id/noti"
+                          android:layout_width="50dp"
+                          android:layout_height="50dp"
+                          app:lottie_fileName="noti1.json"
+                          app:lottie_loop="true" />
+
+                  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <RelativeLayout
+                        android:id="@+id/main"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.7"
+                            android:fontFamily="@font/welcome"
+                            android:padding="10dp"
+                            android:textAlignment="textStart"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <me.tankery.lib.circularseekbar.CircularSeekBar
+                            android:id="@+id/progressbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/tv_name"
+                            app:cs_circle_color="#E35484"
+                            app:cs_circle_fill="#FDFDFC"
+                            app:cs_circle_progress_color="#8BC34A"
+                            app:cs_circle_stroke_width="30dp"
+                            app:cs_circle_style="butt"
+                            app:cs_circle_x_radius="100dp"
+                            app:cs_circle_y_radius="150dp"
+                            app:cs_disable_pointer="true"
+                            app:cs_disable_progress_glow="false"
+                            app:cs_end_angle="20"
+                            app:cs_hide_progress_when_empty="false"
+                            app:cs_lock_enabled="true"
+                            app:cs_maintain_equal_circle="true"
+                            app:cs_max="100"
+                            app:cs_move_outside_circle="true"
+                            app:cs_negative_enabled="true"
+                            app:cs_pointer_alpha_ontouch="50"
+                            app:cs_pointer_angle="0"
+                            app:cs_pointer_color="#FFC107"
+                            app:cs_pointer_halo_border_width="2dp"
+                            app:cs_pointer_halo_color="#8BC34A"
+                            app:cs_pointer_halo_color_ontouch="#FFEB3B"
+                            app:cs_pointer_halo_width="10dp"
+                            app:cs_pointer_stroke_width="24dp"
+                            app:cs_progress="40"
+                            app:cs_start_angle="160"
+                            app:cs_use_custom_radii="true" />
+
+                        <TextView
+                            android:id="@+id/tv_score"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_below="@+id/tv_name"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/sebang"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:textColor="#E91E63"
+                            android:textSize="36sp" />
+
+                    </RelativeLayout>
+
+
+                  <RelativeLayout
+                      android:id="@+id/buttons"
+                      android:layout_width="310dp"
+                      android:layout_height="320dp"
+                      android:layout_below="@id/main"
+                      android:layout_centerHorizontal="true"
+                      android:padding="10dp">
+
+                      <Button
+                          android:id="@+id/btn_h1"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentTop="true"
+                          android:background="@drawable/button_color"
+                          android:fontFamily="@font/elice"
+                          android:text="심장재활\n관련정보"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h2"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_alignParentTop="true"
+                          android:layout_marginStart="10dp"
+                          android:layout_toRightOf="@+id/btn_h1"
+                          android:background="@drawable/button_color2"
+                          android:fontFamily="@font/elice"
+                          android:text="심혈관질환\n위험인자"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h3"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_alignParentTop="true"
+                          android:layout_marginStart="10dp"
+                          android:layout_toRightOf="@+id/btn_h2"
+                          android:background="@drawable/button_color"
+                          android:fontFamily="@font/elice"
+                          android:text="혈압/당뇨\n/체중기록"
+                          android:textColor="@color/white"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h4"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_below="@id/btn_h1"
+                          android:layout_alignParentLeft="true"
+                          android:layout_marginTop="14dp"
+                          android:background="@drawable/button_color2"
+                          android:fontFamily="@font/elice"
+                          android:text="4주심장\n재활운동"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h5"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_below="@id/btn_h2"
+                          android:layout_marginStart="10dp"
+                          android:layout_marginTop="14dp"
+                          android:layout_toRightOf="@+id/btn_h4"
+                          android:background="@drawable/button_color"
+                          android:fontFamily="@font/elice"
+                          android:text="스마트워치\n운동하기"
+                          android:textColor="@color/white"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h6"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_below="@id/btn_h3"
+                          android:layout_marginStart="10dp"
+                          android:layout_marginTop="14dp"
+                          android:layout_toRightOf="@+id/btn_h5"
+                          android:background="@drawable/button_color2"
+                          android:fontFamily="@font/elice"
+                          android:text="운동부하\n검사"
+                          android:textColor="@color/white"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h7"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_below="@id/btn_h4"
+                          android:layout_alignParentLeft="true"
+                          android:layout_marginTop="14dp"
+                          android:background="@drawable/button_color"
+                          android:fontFamily="@font/elice"
+                          android:text="심장수술\n환자교육"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15sp" />
+
+
+                      <Button
+                          android:id="@+id/btn_h8"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_below="@id/btn_h5"
+                          android:layout_marginStart="10dp"
+                          android:layout_marginTop="14dp"
+                          android:layout_toRightOf="@+id/btn_h4"
+                          android:background="@drawable/button_color2"
+                          android:fontFamily="@font/elice"
+                          android:text="재세동기\n\심박동기"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15sp" />
+
+                      <Button
+                          android:id="@+id/btn_h9"
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_below="@id/btn_h6"
+                          android:layout_marginStart="10dp"
+                          android:layout_marginTop="14dp"
+                          android:layout_toRightOf="@+id/btn_h5"
+                          android:background="@drawable/button_color"
+                          android:fontFamily="@font/elice"
+                          android:text="설정"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15sp"
+                          tools:ignore="TextContrastCheck" />
+
+
+                  </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/buttons"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/la_front1"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/uuh" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/welcome"
+                                android:padding="10dp"
+                                android:text="울산대병원 심장재활팀"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/phone"
+                                android:layout_width="wrap_content"
+                                android:gravity="top"
+                                android:layout_height="48dp"
+                                android:background="#00FFFFFF"
+                                android:text="전화: (052)250-8286"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/crkimText" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

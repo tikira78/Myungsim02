@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceScreen
+        android:key="private"
+        android:title="개인정보설정"
+        android:summary="성별, 나이, 키, 몸무게 설정">
+        <intent
+            android:targetPackage="com.msba.myungsim02"
+            android:targetClass="com.msba.myungsim02.setting.SetOneActivity"/>
+        </PreferenceScreen>
+
+
+
+    <PreferenceScreen
+        android:key="alarm"
+        android:title="약복용 및 기타 알람설정"
+        android:summary="약복용 시간을 맞춰두고 알람을 울리게 하세요"
+        >
+        <intent
+            android:targetPackage="com.msba.myungsim02"
+            android:targetClass="com.msba.myungsim02.setting.SetTwoActivity"/>
+
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="programming"
+        android:title="울산대병원 심장재활팀"
+        android:summary="울산대병원 심장재활팀"
+        >
+        <intent
+            android:targetPackage="com.msba.myungsim02"
+            android:targetClass="com.msba.myungsim02.setting.SetThreeActivity"/>
+
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="programming"
+        android:title="앱 개발 정보"
+        android:summary="앱 개발 관련 정보"
+        >
+        <intent
+            android:targetPackage="com.msba.myungsim02"
+            android:targetClass="com.msba.myungsim02.setting.SetFourActivity"/>
+
+
+    </PreferenceScreen>
+
+
+
+</PreferenceScreen>
+

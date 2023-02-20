@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".risk.RiskActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/elice"
+                android:background="@drawable/profile"
+                android:text="     조절 가능한 위험인자"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="현재 흡연 중이거나 금연한지 아직 6개월이 지나지 않은 경우"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="과음"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="혈압: 수축기 혈압≥140mmHg, 이완기 혈압≥90mmHg"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="당뇨: 공복시 혈당≥126mg/dL, 당화혈색소(HbA1C)&#60;7"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="스트레스"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="콜레스테롤 이상: LDL(저밀도지단백)&#62;130mg/dL 또는 HDL(고밀도지단백)&#60;40mg/dL"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="비만: 체지량지수(BMI)>30kg/m&#178; 또는 허리둘레: 남자&#62;102㎝, 여자&#62;88㎝
+또는 허리 엉덩이비율: 남자≥0.95, 여자≥0.86"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/elice"
+                android:background="@drawable/profile"
+                android:backgroundTint="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="    조절 불가능한 위험인자"
+                android:textSize="20sp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="가족력1: 아버지나 남자 형제 중에 55세 이전에 심혈관질환으로 사망한 경우"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minHeight="48dp"
+                android:text="가족력2: 어머니나 여자 형제 중에 65세 이전에 심혈관질환으로 사망한 경우"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="고령"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="남성"
+                android:textColor="@color/crkimText"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_color"
+                android:fontFamily="@font/elice"
+                android:text="확인"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

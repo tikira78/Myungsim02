@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.msba.myungsim02.R;
@@ -43,6 +44,8 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     DocumentReference docR;
     FirebaseFirestore db;
+    FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    DatabaseReference databaseReference = firebaseDatabase.getReference();
 
     int length, length2;
 
@@ -60,7 +63,6 @@ public class RegisterActivity extends AppCompatActivity {
         //mDatabaseRef = FirebaseDatabase.getInstance().getReference("crehab");
 
         mEtName = findViewById(R.id.et_name);
-        mEtAge = findViewById(R.id.et_age);
         mEtEmail = findViewById(R.id.et_email);
         mEtPwd = findViewById(R.id.et_pass);
         mBtnRegister = findViewById(R.id.btn_register);
@@ -73,20 +75,14 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 strName = mEtName.getText().toString();
-                strAge = mEtAge.getText().toString();
                 strEmail = mEtEmail.getText().toString();
                 strPwd = mEtPwd.getText().toString();
 
-
                 length = strPwd.length();
-                length2 = strAge.length();
+
                 Log.i("crkim", String.valueOf(length));
                 if(strName.equals("")) {
                     Toast.makeText(RegisterActivity.this, "이름을 입력해주세요", Toast.LENGTH_LONG).show();
-                } else if(strAge.equals("")) {
-                    Toast.makeText(RegisterActivity.this, "출생년도 4자리 입력해주세요", Toast.LENGTH_LONG).show();
-                } else if(length2 != 4) {
-                    Toast.makeText(RegisterActivity.this, "출생년도는 4자리로 입력해주세요(예:1966)", Toast.LENGTH_LONG).show();
                 } else if(!pattern.matcher(strEmail).matches()) {
                     Toast.makeText(RegisterActivity.this, "이메일을 정확히 입력해주세요", Toast.LENGTH_LONG).show();
                 } else if(length != 6) {
@@ -112,7 +108,6 @@ public class RegisterActivity extends AppCompatActivity {
                     db = FirebaseFirestore.getInstance();
                     Map<String, Object> member = new HashMap<>();
                     member.put("name", strName);
-                    member.put("birth",strAge);
                     member.put("email", strEmail);
                     member.put("pw", strPwd);
                     db.collection(firebaseUser.getEmail())
@@ -127,6 +122,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     Log.i("crkim", "success");
                                     Toast.makeText(RegisterActivity.this, "회원가입에 성공하였습니다.", Toast.LENGTH_LONG).show();
 
+
                                     Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
@@ -136,6 +132,7 @@ public class RegisterActivity extends AppCompatActivity {
                             .addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
+
                                     Log.i("crkim", "failure");
                                     Toast.makeText(RegisterActivity.this, "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
                                 }
@@ -169,18 +166,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void name(){
 
-        Long now = System.currentTimeMillis();
-        Date date = new Date(now);
-        SimpleDateFormat dateFormat = new SimpleDateFormat ( "yyyy");
-        String getTime = dateFormat.format(date);
-        int time = Integer.parseInt(getTime);
-        int age = time - Integer.parseInt(strAge);
-
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         db = FirebaseFirestore.getInstance();
         Map<String, Object> member = new HashMap<>();
         member.put("name", strName);
-        member.put("age",age);
         db.collection(firebaseUser.getEmail())
                 .document("account")
                 .set(member)
@@ -188,6 +177,17 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         Log.i("crkim", "success");
+
+                        Long now = System.currentTimeMillis();
+                        Date date = new Date(now);
+                        SimpleDateFormat dateFormat1 = new SimpleDateFormat("yyyy년MM월dd일HH시mm분");
+                        String getTime2 = dateFormat1.format(date);
+
+                        UserAccount item = new UserAccount();
+                        item.setName(strName);
+                        item.setRegisterdate(getTime2);
+                        databaseReference.child("user").push().setValue(item);
+
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

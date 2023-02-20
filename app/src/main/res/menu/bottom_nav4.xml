@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/ic_baseline_heart_broken_24"
+        android:title="심혈관수술"
+        />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/ic_baseline_volunteer_activism_24"
+        android:title="술 전 관리"
+        />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/ic_baseline_assist_walker_24"
+        android:title="술 후 재활" />
+
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/ic_baseline_error_outline_24"
+        android:title="주의사항" />
+
+
+</menu>

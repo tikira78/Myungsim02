@@ -1,10 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Myungsim02" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Myungsim02" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorPrimary">@color/button</item>
+        <item name="colorPrimaryDark">@color/button</item>
         <item name="colorAccent">@color/teal_200</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.HealthConnect" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/health_connect_blue</item>
     </style>
 </resources>

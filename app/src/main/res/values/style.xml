@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        // ...
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="SpinnerDivideStyle" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">#D6D6D6</item> <!-- divider 색 -->
+        <item name="android:dividerHeight">1dp</item> <!-- divider 높이 -->
+    </style>
+
+    <style name="SpinnerTheme" parent="AppTheme">
+        <item name="android:dropDownListViewStyle">@style/SpinnerDivideStyle</item>
+    </style>
+
+
+    <style name="numberPickerCustomSize">
+        <!--Display textSize-->
+        <item name="android:textSize">28sp</item>
+        <!--Display textColor-->
+        <item name="android:editTextColor">#FFFFFFFF</item>
+        <item name="android:fontFamily">@font/sebang</item>
+        <item name="android:colorControlNormal">#FFFFFFFF</item> <!-- divider 색 -->
+        <item name="android:dividerHeight">2dp</item> <!-- divider 높이 -->
+    </style>
+
+
+
+</resources>

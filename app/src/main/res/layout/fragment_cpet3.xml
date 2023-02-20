@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CPET.FragmentCPET3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="fill_vertical"
+                android:layout_marginTop="8dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/welcome"
+                    android:text="운동처방전"
+                    android:textAlignment="textStart"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/jooyeon"
+                    android:contentDescription="TODO" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/child_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator_l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/seek_bar_background" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager_l1"
+                    android:layout_below="@id/indicator_l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_zoom_out_map_24"
+                    android:tag="손가락으로 화면을 늘여서 보세요"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

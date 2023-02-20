@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingBottom="@dimen/vertical_margin"
+    tools:context=".wear.WearActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/profile"
+        android:backgroundTint="#D301C1B1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_watch_24"/>
+
+
+        <TextView
+            android:id="@+id/logger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Output:\n"
+            android:textColor="#004D40" />
+
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elice"
+                android:text="1. 최대맥박수 알람 설정"
+                android:textColor="#795548"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <NumberPicker
+                    android:id="@+id/np_bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="8dp"
+                    android:theme="@style/numberPickerCustomSize" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/bpm"
+                    android:textColor="#795548"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/white"
+            android:minHeight="48dp"
+            android:textSize="18dp"
+            android:text="맥박수 설정안함"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/elice"
+            android:text="2. 운동시간 알람설정"
+            android:textColor="#795548"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <NumberPicker
+            android:id="@+id/np_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/numberPickerCustomSize" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/hour"
+                android:textColor="#795548"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <NumberPicker
+                android:id="@+id/np_min"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/numberPickerCustomSize" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/min"
+                android:textColor="#795548"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/white"
+            android:minHeight="48dp"
+            android:textSize="18dp"
+            android:text="운동시간 설정안함"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/sendbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color4"
+            android:text="@string/confirm"
+            android:textColor="#00838F" />
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+

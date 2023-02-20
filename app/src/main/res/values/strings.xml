@@ -1,3 +1,177 @@
 <resources>
-    <string name="app_name">Myungsim02</string>
+    <string name="app_name">Health Connect Codelab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="_4">4.운동강도</string>
+    <string name="min">분</string>
+    <string name="hour">시간</string>
+    <string name="_3">3.운동시간</string>
+    <string name="_2">2.운동종류</string>
+    <string name="choice">선택</string>
+    <string name="_1">1.운동시작시각</string>
+    <string name="n">저장\n하기</string>
+    <string name="see">기록\n보기</string>
+    <string name="see1">이전기록\n보기</string>
+    <string name="rpe">rpe</string>
+    <string name="borg">BORG 운동자각도</string>
+    <string name="n_n">이번 운동의 강도는 어느 정도 였는지\n아래 좌측 빨간색 동그라미를 움직여서 \n가리켜주세요.</string>
+    <string name="confirm">확인</string>
+    <string name="rpe2">rpe2</string>
+    <string name="day">운동 시 주의사항 및 일상복귀요령</string>
+    <string name="day_4">4</string>
+    <string name="jooyeon">jooyeon</string>
+    <string name="target">오늘의 운동목표</string>
+    <string name="ex1">앱으로\n운동</string>
+    <string name="backward">backward</string>
+    <string name="forward">forward</string>
+    <string name="rec">기록만\n하기</string>
+    <string name="kji">울산대병원 재활의학과\n심장재활 물리치료사</string>
+    <string name="ljy">울산대병원 재활의학과\n심장재활 전담치료사\n울산시 물리치료사협회 부회장</string>
+    <string name="kcr">울산대의대 부교수\n울산대병원 재활의학과\n심장재활전담 전문의</string>
+    <string name="har">울산대병원 재활의학과\n심장재활 전담간호사\nACLS 전문심폐소생술 이수</string>
+    <string name="kji0">권재일</string>
+    <string name="har0">홍애리</string>
+    <string name="ljy0">이주연</string>
+    <string name="kcr0">김충린</string>
+    <string name="uuhcr">울산대병원 심장재활팀</string>
+    <string name="bpm">회/분</string>
+    <string name="cpet0_1">운동부하검사 목적,\n방법 및 주의사항</string>
+    <string name="cpet0_2">1. 검사목적: \n 1) 우선 심장시술 또는 수술 전후 심장 및 나의 전반적인 운동능력 정도를 정확히
+평가하여 적절한 운동목표와 방법을 설정하기 위해 시행합니다. \n 2) 또한 시술이나 수술이후 심장이 회복이 잘 되고 있는지 객관적으로
+확인할 수 있으며, \n 3) 운동이나 활동시에는 숨겨져 있을 수 있는 심장기능의 이상을 심전도 등을 통해 미리 확인하여 예방할
+수 있도록 도움을 줄 수 있습니다. \n\n2. 검사방법: \n 1) 심폐기능을 측정하기 위해 심전도 및 호흡가스 마스크 등을 착용하고,
+        천천히 걷기부터 가능한 범위의 달리기까지 강도를 올려가며 검사를 시행합니다. \n 2) 검사시간 자체는 대략 20~30분 정도
+        소요되며, 준비 및 검사 후 회복까지 대략 1시간 정도 예상하시면 됩니다. \n 3) 검사시 상의는 탈의를 한 상태로 시행하며,
+        운동복 하의와 운동화를 입거나 지참하셔서 오시면 됩니다. 검사실에는 옷을 갈아 입을 수 있는 탈의실과 샤워실이 있고,
+        수건은 비치되어 있습니다. \n\n3.검사시 주의사항 \n 1) 운동부하검사 하루 전에는 무리한 운동을 하지 않습니다.
+        가벼운 조깅 정도는 괜찮습니다. \n 2) 검사 3시간전부터는 과식을 하거나 카페인(커피, 녹차, 콜라, 초콜릿 등)이 함유된
+        음식은 섭취하지 마세요. \n 3) 검사 당일에는 흡연을 삼가하시고, 검사 전날 음주도 피해세요. \n 4) 검사하는 날 식사는
+        예정대로 하시되, 금식이 필요한 피검사 등이 같은 날 예정되있는 경우는 검사 시간을 조절해서 우선 피검사 시행 후 식사를
+        하시고 1시간 정도 휴식 후 심장부하검사를 시행할 수 있도록 심장재활 치료실과 검사시간을 조절하세요. \n 5) 복용하시던 약들도
+        복용을 하시면 되고, 다른 검사나 처치를 위해 중단한 경우는 미리 검사실에 알려주세요. \n 6) 예약시간에 늦는 경우
+        다음 환자분에게 피해가 갈 수 있으니 예약시간을 지켜주세요. 혹 검사를 미뤄야 하는 경우에는 심장재활 치료실
+        (052-250-8286)으로 연락주세요.</string>
+    <string name="cpet0_3">TODO</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+    <string name="menu">menu</string>
+    <!-- Screen titles -->
+    <string name="welcome_screen">Welcome screen</string>
+    <string name="exercise_sessions">Exercise sessions</string>
+    <string name="exercise_session_detail">Exercise session detail</string>
+    <string name="sleep_sessions">Sleep sessions</string>
+    <string name="sleep_session_detail">Sleep session detail</string>
+    <string name="differential_changes">Changes</string>
+
+    <!-- Welcome screen -->
+    <string name="welcome_message">Welcome to Health Connect!</string>
+    <string name="health_connect_logo">Health Connect logo</string>
+    <string name="installed_welcome_message">
+        Health Connect is installed on this device. Use the menu to explore the sample, with each
+        screen demonstrating a different aspect of Health Connect functionality.
+    </string>
+
+    <!-- Privacy policy screen -->
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_policy_description">
+        This is a placeholder example. Your app should display an appropriate privacy policy for how
+        you will handle and use Health Connect data. This sample app does not store or transmit any
+        data outside of Health Connect.
+    </string>
+
+    <!-- Not installed on device -->
+    <string name="not_installed_tag">not_installed_tag</string>
+    <string name="market_url">market://details</string>
+    <string name="health_connect_package">com.google.android.apps.healthdata</string>
+    <string name="onboarding_url">healthconnect://onboarding</string>
+    <string name="not_installed_description">
+        Health Connect is supported on this device, but is not currently installed.
+    </string>
+    <string name="not_installed_link_text">
+        To use this sample, and other apps using Health Connect, please install the Health Connect
+        package from Google Play.
+    </string>
+
+    <!-- Not supported on device -->
+    <string name="not_supported_tag">not_supported_tag</string>
+    <string name="not_supported_url">https://developer.android.com/health-connect</string>
+    <string name="not_supported_description">
+        Health Connect is only supported on Android devices running API level %1$d or above.
+    </string>
+    <string name="not_supported_link_text">
+        Please visit the Health Connect guides to learn more about device compatibility and using
+        Health Connect.
+    </string>
+
+    <string name="permissions_button_label">Request permissions</string>
+    <string name="not_available_abbrev">N/A</string>
+
+    <!-- Exercise Session screen -->
+    <string name="insert_exercise_session">Insert session</string>
+    <string name="no_title">[No title]</string>
+    <string name="delete_button">Delete</string>
+
+    <!-- Exercise Session detail screen -->
+    <string name="total_active_duration">Total active duration</string>
+    <string name="total_steps">Total steps</string>
+    <string name="total_distance">Total distance</string>
+    <string name="total_energy">Total calories</string>
+    <string name="hr_stats">HR stats (bpm)</string>
+    <string name="hr_series">HR series (bpm)</string>
+    <string name="speed_stats">Speed stats (m/s)</string>
+    <string name="speed_series">Speed series (m/s)</string>
+    <string name="min_label">Min</string>
+    <string name="max_label">Max</string>
+    <string name="avg_label">Avg</string>
+    <string name="label_and_value">%1$s: %2$s</string>
+
+    <!-- Sleep Session screen -->
+    <string name="generate_sleep_data">Generate sleep data</string>
+    <string-array name="sleep_notes_array">
+        <item>I slept great!</item>
+        <item>I got woken up</item>
+        <item>Struggled to sleep</item>
+        <item>Much needed sleep</item>
+        <item>Restful sleep</item>
+    </string-array>
+    <string name="sleep_notes">Notes:</string>
+    <string name="sleep_duration">Duration:</string>
+    <string name="sleep_time">Time:</string>
+    <string name="sleep_stages">Sleep stages:</string>
+
+    <!-- Input Readings detail screen -->
+    <string name="input_readings">Record weight</string>
+    <string name="delete_button_readings">Delete</string>
+    <string name="weight_input">New Record (Kg)</string>
+    <string name="add_readings_button">Add</string>
+    <string name="previous_readings"> Previous Measurements </string>
+    <string name="weekly_avg"> Weekly Average </string>
+    <string name="kilograms">Kg\u0020</string>
+    <string name="valid_weight_error_message"> Weight must be between 0 and 1000</string>
+
+    <!-- Differential changes screen -->
+    <string name="differential_changes_title_text">Enabling differential change tracking obtains a token that can be used later for obtaining any subsequent changes</string>
+    <string name="differential_changes_continuation_text">Click on the button below to get any new changes that have taken place in Health Connnect since the token was obtained.</string>
+    <string name="differential_changes_switch_text">Track changes</string>
+    <string name="differential_changes_button_text">"Get new changes"</string>
+    <string name="differential_changes_empty">No changes found</string>
+    <string name="differential_changes_current_token">Current token: %1$s</string>
+    <string name="differential_changes_upserted">Upserted:</string>
+    <string name="differential_changes_deleted">Deleted:</string>
+
+    <string name="differential_changes_type_exercise_session">Exercise session</string>
+    <string name="differential_changes_type_exercise_event">Exercise event</string>
+    <string name="differential_changes_type_speed_series">Speed series</string>
+    <string name="differential_changes_type_heart_rate_series">Heart rate series</string>
+    <string name="differential_changes_type_total_calories">Total calories</string>
+    <string name="differential_changes_type_steps">Steps</string>
+    <string name="differential_changes_type_sleep_session">Sleep session</string>
+    <string name="differential_changes_type_sleep_stage">Sleep stage</string>
+    <string name="differential_changes_type_distance">Distance</string>
+    <string name="differential_changes_type_weight">Weight</string>
+
+    <!-- Health Connect settings -->
+    <string name="settings">Settings</string>
 </resources>
