@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">watch</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="bpm">맥박수</string>
+    <string name="btn1">S</string>
+    <string name="btn2">P</string>
+    <string name="btn3">R</string>
+    <string name="btn4">E</string>
+    <string name="title_activity_ressult">RessultActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="s1">걷기</string>
+    <string name="s2">달리기/조깅</string>
+    <string name="s3">러닝머신</string>
+    <string name="s4">자전거</string>
+    <string name="s5">기타(근력운동 등)</string>
+    <string name="s6">시작</string>
+    <string name="title_activity_count">CountActivity</string>
+
+</resources>

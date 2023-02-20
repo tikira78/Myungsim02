@@ -1,0 +1,4 @@
+<resources>
+    <string name="hello_world">00:00:00</string>
+    <string name="bpm">--</string>
+</resources>

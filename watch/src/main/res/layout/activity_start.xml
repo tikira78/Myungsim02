@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".StartActivity"
+    tools:deviceIds="wear">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <RadioGroup
+                    android:id="@+id/rg_exercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp">
+
+                    <RadioButton
+                        android:id="@+id/ex1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="2dp"
+                        android:minHeight="48dp"
+                        android:text="@string/s1"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ex2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="2dp"
+                        android:minHeight="48dp"
+                        android:text="@string/s2"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ex3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:drawablePadding="2dp"
+                        android:minHeight="48dp"
+                        android:text="@string/s3"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ex4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="2dp"
+                        android:minHeight="48dp"
+                        android:text="@string/s4"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/ex5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:drawablePadding="2dp"
+                        android:minHeight="40dp"
+                        android:text="@string/s5"
+                        android:textColor="#FBFBFB"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#E91E63"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:background="#00FFFFFF"
+                android:text="@string/s6"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.wear.widget.BoxInsetLayout>
